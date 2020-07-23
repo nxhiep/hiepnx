@@ -1,7 +1,6 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:hiepnx/generated/codegen_loader.g.dart';
-import 'package:hiepnx/models/card.dart';
 import 'package:hiepnx/provider/theme_model.dart';
 import 'package:hiepnx/repositories/sql_repository.dart';
 import 'package:hiepnx/screens/splash_screen.dart';
@@ -22,6 +21,7 @@ void main() async {
       themeMode: themeMode
     ),
   ));
+  // runApp(YoutubePlayerDemoApp());
 }
 
 class MyApp extends StatelessWidget {

@@ -27,7 +27,7 @@ class ThemeUtils {
     return _prefs;
   }
 
-  static Future<ThemeMode> loadThemeMode() async {
+  static Future<ThemeMode>  loadThemeMode() async {
     SharedPreferences sharedPreferences = await getPrefs();
     if(ThemeMode.dark.index == sharedPreferences.get(_themeModeKey)){
       return ThemeMode.dark;

@@ -17,7 +17,7 @@ class _HomeScreenState extends State<HomeScreen> with AutomaticKeepAliveClientMi
   @override
   void initState() {
     super.initState();
-    cards.add("assets/images/con_ca.jpg");
+    cards.add("assets/images/con_ca_0.jpg");
     cards.add("assets/images/con_chim.jpg");
     cards.add("assets/images/con_cho.jpg");
     cards.add("assets/images/con_ga.jpg");
@@ -29,6 +29,9 @@ class _HomeScreenState extends State<HomeScreen> with AutomaticKeepAliveClientMi
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text("Funny"),
+      ),
       body: GridView.builder(
         itemCount: cards.length,
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2), 

@@ -1,6 +1,7 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:hiepnx/generated/codegen_loader.g.dart';
+import 'package:hiepnx/provider/test_model.dart';
 import 'package:hiepnx/provider/theme_model.dart';
 import 'package:hiepnx/repositories/sql_repository.dart';
 import 'package:hiepnx/screens/splash_screen.dart';
@@ -34,6 +35,7 @@ class MyApp extends StatelessWidget {
     return MultiProvider(
       providers: [
         ChangeNotifierProvider(create: (context) => ThemeModel(themeMode: themeMode)),
+        ChangeNotifierProvider(create: (context) => TestModel()),
       ],
       child: Consumer<ThemeModel>(
         builder: (_, ThemeModel themeModel, child) {

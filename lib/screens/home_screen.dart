@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hiepnx/components/photo_hero.dart';
 import 'package:hiepnx/screens/card_infos/card_info.dart';
+import 'package:hiepnx/screens/test_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -36,6 +37,21 @@ class _HomeScreenState extends State<HomeScreen> with AutomaticKeepAliveClientMi
         itemCount: cards.length,
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2), 
         itemBuilder: (context, index) => _makeCardItem(index, cards[index]),
+      ),
+      floatingActionButton: FloatingActionButton.extended(
+        label: Row(
+          children: <Widget>[
+            Icon(Icons.assignment),
+            Text("Test")
+          ],
+        ),
+        onPressed: () {
+          Navigator.of(context).push(MaterialPageRoute<void>(
+            builder: (BuildContext context) {
+              return TestScreen();
+            }
+          ));
+        }
       ),
     );
   }

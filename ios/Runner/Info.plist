@@ -11,7 +11,7 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>hiepnx</string>
+	<string>hiepnx_example</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
@@ -46,7 +46,5 @@
 		<string>en</string>
 		<string>vi</string>
 	</array>
-	<key>io.flutter.embedded_views_preview</key>
-	<true/>
 </dict>
 </plist>
